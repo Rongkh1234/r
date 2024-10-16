@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: hwb(197 23% 0%);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        header div {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            top: 20px;
+            right: 20px;
+            gap: 5px;
+        }
+        header a {
+            padding: 5px;
+            border-radius: 100%;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Grid layout */
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Individual book card */
+        .book-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .book-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .book-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .book-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .download-button {
+            padding: 10px 20px;
+            background-color: #6a0dad;
+            color: white;
+            border: 2px solid #4b0082;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #4b0082;
+            border-color: #6a0dad;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        footer div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+        footer a {
+            padding: 5px;
+            border-radius: 100%;
+            text-decoration: none;
+            font-size: 25px;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: black;">សៀវភៅរឿង</h1>
+        <div>
+            <a href="https://t.me/bacll5" style="background-color:  #229ED9; color: white;"><i class="ri-telegram-2-fill"></i></a>
+            <a href="https://www.tiktok.com/@oct.tiger?is_from_webapp=1&sender_device=pc" style="background-color: #333; color: white;"><i class="ri-tiktok-line"></i></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="book-grid">
+            <!-- Book 1 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1291670365122203679/1294538353152233512/image.png?ex=670b604a&is=670a0eca&hm=38eb62e51a000e535234b622e0de24eeb9ba7fde18c62a76b49eed84a92929dd&=&format=webp&quality=lossless&width=465&height=671" alt="Book 1" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">ថៅកែចិត្តចោរ</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1292854171694792777/1294589810693902357/8e42baf184965b84.pdf?ex=670b9037&is=670a3eb7&hm=21bf961ef6af4426b6d3ce6b2c90c7b7ad0d1ff7d1895eb6ef70118e948a4958&" download="https://cdn.discordapp.com/attachments/1292854171694792777/1294589810693902357/8e42baf184965b84.pdf?ex=670b9037&is=670a3eb7&hm=21bf961ef6af4426b6d3ce6b2c90c7b7ad0d1ff7d1895eb6ef70118e948a4958&" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1291670365122203679/1294542846518366228/image.png?ex=670b647a&is=670a12fa&hm=5b521096177c352d4fc7556cf00a39c4af74bf753fcbe0deaa53a65e5b96e9c3&=&format=webp&quality=lossless" alt="Book 2" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">រឿងសូផាត</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1292854171694792777/1294607693058670703/b13c7dc3ee295d5c.pdf?ex=670ba0de&is=670a4f5e&hm=daf4226144114d56dad914db5d5a34c1cd9a47eb12e4b736eed33be0d208e9cb&" download="book2.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1292854171694792777/1294607945933394001/image.png?ex=670ba11a&is=670a4f9a&hm=f953f96acea9e4e9172c27d734b3f5b0aa56d62d86e6b62579f0b049cf90525b&=&format=webp&quality=lossless&width=241&height=350" alt="Book 3" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">គ្រូបង្រៀនស្រុកស្រែ</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1292854171694792777/1294607531477303326/e14f232874ec5a73.pdf?ex=670ba0b8&is=670a4f38&hm=424a32b686284d557feedbc9b27814379e749232b5263a9986651214d1325062&" download="book3.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1292854171694792777/1294608620918673458/image.png?ex=670ba1bb&is=670a503b&hm=ab45ca8a094cbe86690cacb88074f967baf37e4b312f6b5f9a87ad0c9a27cab9&=&format=webp&quality=lossless&width=462&height=671" alt="Book 4" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">ស៊ឹមអ្នកបរឡាន</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1292854171694792777/1294608476491747358/588ffc842ef764fe.pdf?ex=670ba199&is=670a5019&hm=57fecdc51ddc47515c46a1f8c640b1155d2c16f9158bc83fba959ac523b1788d&" download="book4.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1291670365122203679/1294609339214200853/image.png?ex=670ba267&is=670a50e7&hm=f2dace3be96908589168a84ea13f050d6f775432eb262edac5a8b785944886f9&=&format=webp&quality=lossless" alt="Book 5" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">រឿងទុំទាវ</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1249339412450639892/1294609967638380566/c1a5cbcbb1d504de.pdf?ex=670ba2fc&is=670a517c&hm=87fc6d06fba0987e7d384e161ad6181b9c5df1038161e6103647bd071b7d565b&" download="book5.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 6 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1249339412450639892/1294611734153138218/n7THEzkqGfrSEkTtAX06g2bJfjffjD4POAeILKuM.png?ex=670ba4a2&is=670a5322&hm=be375cb940dedc3cc2e174258fb7a58c2aa024e87c233539690a0e2f720df73b&=&format=webp&quality=lossless&width=245&height=350" alt="Book 6" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">មាលាដួងចិត្ត</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1249339412450639892/1294610681110466570/7a1bbecc9ccfa698.pdf?ex=670ba3a7&is=670a5227&hm=b3322dc2d0bc33f1ff8c55fd2a62a1c7a1af0fe67cff4a538419cbe25de3dc7b&" download="book6.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 7 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1249339412450639892/1294612054145241139/image.png?ex=670ba4ee&is=670a536e&hm=128217a1455a8955cf8d829be4cbf339d3fd1549890761ac45c55ddc39346332&=&format=webp&quality=lossless&width=461&height=670" alt="Book 7" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">រឿងគូលីកំនែន</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1249339412450639892/1294612124827385908/f00b168d569e1def.pdf?ex=670ba4ff&is=670a537f&hm=76ac1d586baecd5dab104e050f46c9a5f671e2089fcfe879aacf6fc1566e2e36&" download="book7.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 8 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1249339412450639892/1294617071296188447/Screenshot_2024-10-12-17-48-17-983_com.png?ex=670ba99a&is=670a581a&hm=0a8dee3eeea0eedcfb5889d7e7adafe59abf29241c439fecf6963a0f463cc24a&=&format=webp&quality=lossless&width=393&height=350" alt="Book 8" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">រឿងកុលាបប៉ៃលិន</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1249339412450639892/1294612974845169796/ac16c6336ccab702.pdf?ex=670ba5c9&is=670a5449&hm=54e2394dcc7e0251d41c25613651e44b53534b8ffb01387e061573e7802e0381&" download="book8.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 9 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1249339412450639892/1294617419851239444/IMG_06122.png?ex=670ba9ed&is=670a586d&hm=7419bc5cd9527ebd51bea4b8e5e2e51787076125790d7a996116734b78d4d29a&=&format=webp&quality=lossless" alt="Book 9" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">រឿងផ្កាស្រពោន</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1249339412450639892/1294617558821113866/3ba04dcd536280ab.pdf?ex=670baa0e&is=670a588e&hm=c9f797483da8338a699b66d2721ddb3ba18e3c49fc2400e7e5bf18dc0c0676e8&" download="book9.pdf" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+
+            <!-- Book 10 -->
+            <div class="book-card">
+                <img src="https://media.discordapp.net/attachments/1249339412450639892/1294617692028010537/image.png?ex=670baa2e&is=670a58ae&hm=48382065d0d102c943eb9439cafbcceb7c23e94fb51d9564d35e8ced74c4a170&=&format=webp&quality=lossless&width=503&height=671" alt="Book 10" class="book-image">
+                <div class="book-content">
+                    <h3 class="book-title">ព្រះអាទិត្យថ្មីរះលើផែនដីចាស់</h3>
+                    <a href="https://cdn.discordapp.com/attachments/1249339412450639892/1294617773816938576/169fa50867919824.pdf?ex=670baa42&is=670a58c2&hm=67c14d8380d5e71ef5a87bcd04b6fa06b3b65ecd014916a77b4f6c57b6ee048f&" download="ព្រះអាទិត្យថ្មីរះលើផែនដីចាស់" class="download-button">ទាញយករឿង</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Khmer Book List</p>
+        <div>
+            <a href="https://t.me/bacll5" style="background-color:  #229ED9; color: white;"><i class="ri-telegram-2-fill"></i></a>
+            <a href="https://www.tiktok.com/@oct.tiger?is_from_webapp=1&sender_device=pc" style="background-color: #000000; color: white;"><i class="ri-tiktok-line"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
